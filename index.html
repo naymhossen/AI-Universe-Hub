@@ -19,10 +19,10 @@
         <button class="btn btn-outline btn-success mt-5">Sort By Date</button>
       </div>
     </header>
-    <main>
+    <main class="w-11/12 mx-auto">
       <section>
 
-        <div id="ai-features-container" class="container gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div id="ai-features-container" class=" mt-8 gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
           <!-- <div class="card bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
@@ -38,9 +38,33 @@
           </div> -->
 
         </div>
+
+        <!-- more btn -->
+        <div id="see-more-btn-container" class="hidden text-center mt-5 mb-8">
+          <button id="see-more-btn" onclick="seeMoreBtn()" class="btn btn-error rounded-xl text-white">See More</button>
+        </div>
         
       </section>
-    </main>
+
+      <!-- modal container -->
+     <section>
+      <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="ai_features_modal.showModal()">open modal</button> -->
+<dialog id="ai_features_modal" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box">
+    <div id="display-ai-modal">
+
+    </div>
+    <!-- <h3 class="font-bold text-lg">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <button class="btn">Close</button>
+    </div> -->
+  </form>
+</dialog>
+
+     </section>
+   </main>
     <script src="index.js"></script>
   </body>
 </html>
